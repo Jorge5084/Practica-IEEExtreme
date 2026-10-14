@@ -1,0 +1,18 @@
+QUE ESS???
+    aritmetica modular es trabajar con el residuo de una division
+
+PARA QUE SIRVE????
+    para optimizar un proceso ya que cuando un problema genera numeros muy gigantescos, podemos trabajar con sus
+    residuos para mantenerlos pequeños
+
+    BASICAMENTE ayuda a agilizar el proceso en el que se hacen operaciones, hacer que sean menos complejas y faciles de entender
+
+EJEMPLOO
+
+    Supongamos que queremos calcular el residuo de:
+
+    24 * 17 mod 7
+
+    podrias tambien ser asi de facil: Puedes reemplazar ambos números por sus residuos:
+    (3/3) mod 7 = 2
+
