@@ -1,0 +1,21 @@
+¿Que es un grafo?
+Es una forma de representar las cosas y conexiones entre ellas, los elemento del grafo son vertices y aristas, los vertices
+representarian las cosas, y las aristas las conexione entre estas cosas.
+Un mapa, laberinto, un tablero o una imagen de celdas tambien pueden ser grafos.
+
+Movimiento en grafos
+ARRIBA Y ABAJO
+arriba     -> (-1,0) 
+abajo      -> (1,0)  
+
+IZQUIERDA Y DERECHA 
+izquierda  -> (0,-1) 
+derecha    -> (0,1)  
+
+. . # . .       A A # B B 
+. # # . .  ->   A # # B B
+. . # # #       A A # # #
+ 
+Los # representan paredes, por las paredes no se puede pasar. 
+En este ejemplo se tienen 2 componentes conexas, ¿por que? porque todos las A se conectan entre si y todas las B 
+se conectan entre si. Pero no existe camino desde una A hacia una B.
