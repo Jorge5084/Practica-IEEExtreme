@@ -16,3 +16,39 @@ EJEMPLOO
     podrias tambien ser asi de facil: Puedes reemplazar ambos números por sus residuos:
     (3/3) mod 7 = 2
 
+--------------------------------------------------------------------------------------------------
+
+POTENCIA RAPIDA
+
+EN QUE CONSISTE
+    consiste en poder realizar una potencia de la manera mas sencilla posible usando trucos matematicos
+
+EJEMPLO
+    cuando tenemos 2 elevado a 8 es: 2*2*2*2*2*2*2*2
+    esta bien, pero imaginemos que la potencia es un numero millonario, multiplicar millon de veces es mucho
+    
+
+    4^7 = 4(4^2)^3
+
+    - El primer 4 es el factor que sobra porque 7 es impar.
+    - 4² es la nueva base.
+    - El 3 es el nuevo exponente porque 7 // 2 = 3.
+
+¿Qué debes recordar para IEEEXtreme?
+    Expresión	Funcionamiento
+    4 ** 7	Calcula la potencia completa
+    pow(4, 7)	Calcula la potencia completa
+    pow(4, 7, MOD)	Calcula la potencia módulo MOD eficientemente
+
+
+En ese paso se utiliza la propiedad de sustitución de las congruencias modulares para simplificar los cálculos.
+
+En el paso anterior habíamos calculado que:
+32=9≡2(mod7)
+32=9≡2(mod7)
+
+Como 3434 se puede escribir como el cuadrado de 3232 (es decir, (32)2(32)2), reemplazamos 3232 por su residuo equivalente módulo 77, que es 22:
+(32)2≡(2)2=4(mod7)
+(32)2≡(2)2=4(mod7)
+
+Esto nos evita tener que trabajar con números grandes (como 92=8192=81, donde 81(mod7)=481(mod7)=4), usando en su lugar el residuo más pequeño (22).
