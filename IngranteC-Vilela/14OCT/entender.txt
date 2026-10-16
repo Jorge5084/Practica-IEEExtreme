@@ -1,0 +1,34 @@
+#DP: PROGRAMACION DINÁMICA
+
+#Recurrencias y DP de una dimensión
+
+Imagina que tenemos un dado con las caras del 1 al 6.
+Queremos averiguar:
+¿De cuántas maneras diferentes podemos lanzar el dado para conseguir una suma determinada?
+
+Por ejemplo, para conseguir una suma de 3 tenemos estas posibilidades:
+
+    Secuencia 1
+     1 1 1
+    Secuencia 2
+     1 2
+    Secuencia 3
+     2 1
+    Secuencia 4
+     3      
+    Total: 4 secuencias diferentes
+
+Entonces para que sirve la programacion dinámica:
+    Es muy útil porque nos permite calcular estas cantidades sin tener que generar todas las secuencias posibles
+    en lugar de resolver el mismo problema muchas veces, guardamos los resultados pequeños para construir los grandes
+
+     El algoritmo resuelve los mismos subproblemas varias veces; la programación dinámica los calcula una sola vez y 
+     almacena la respuesta.
+
+INFO DE VIDEO DE YT
+    la programacion dinamica es divir el problema en subproblemas, luego los combinamos y llegamos a la solución
+    PASOS
+        1. Describir la estrcutura de la solución
+        2.definir el valor de la solución
+        3.calcular el valor
+    
