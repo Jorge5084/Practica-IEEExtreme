@@ -1,0 +1,52 @@
+¿Que es BIG0? (big o) / O que son las complejidades por medio de tiempo en las operaciones?
+
+Lo aprendimos en base de datos, y es un tipo de resultado/valor/notacion que se obtiene por medio de una operacion al momento de que se
+procesa algun tipo de proceso de datos.
+entonces, para que puedan entenderlo de mejor forma supongamos que tengo 10 000 numeros y tengo dos programas
+el programa 1 revisa cada numero una sola vez de forma directa
+en cambio el programa 2 lo que hace es revisar uno por uno cada numero, entonces, ¿que sucede ahi? Una enorme cantidad de operaciones
+Mientras en el A se hizo de forma mas directa, el B tardo mas, por lo que el concepto de Big O y todo esto se hace ver por el tiempo de 
+operaciones dependiendo del proceso, y todo esto se puede visualizar en listas, diccionarios, matrices.
+
+Tipos de complejidades:
+O(1) = Operacion constante (este accede al tipo de operacion que se le delegue en especifico, por ejemplo a la posicion X)
+O(n) = Operacion lineal (Recorre de forma lineal los datos hasta dar con X valor)
+O(n log n) = Operacion lineal logaritmica (ordena por datos primero, para posteriormente dar con X dato una vez ordena)
+O(n*2) = Operacion cuadratica (es cuadratica por que como si fuera un excel, compara todos los datos que hayan para encontrar X dato)
+
+Ejemplo para que entiendan
+Utilizando el primer ejemplo, tenemos la siguiente pequeña lista:
+mi_futura_plata = [1,2,3,4,5,6,7,8. . . 10 000]
+for numero in mi_futura_plata:
+    print(numero)
+
+Si ejecutan eso, observaran que hay 10 000 elementos y lo que hace este bucle es que recorre cada elemento hasta dar con el numero final
+osea el 10k. Entonces, aunque hubieran 10 numeros, o 100, o 132 o los que sea, la lista los recorre cada uno hasta llegar al numero final.
+Por tanto, en el tipo de complejidades podemos ver que este tipo de complejidad se hace presente en O(n), ¿porque? Porque como se dijo
+recorre los datos de forma lineal hasta dar con el ultimo valor y ahi se detiene.
+
+Ahora otro ejemplo usando bucles anidados ( O(n*2) )
+Usaremos el mismo ejemplo anterior
+mi_futura_plata = [1,2,3,4,5,6,7,8. . . 10 000]
+for numero in mi_futura_plata:
+    for numero2 in mi_futura_plata:
+        print(numero,numero2)
+
+Por cada numero del primer bucle, el segundo recorre nuevamente toda la lista, es decir hay cuatro elementos, se producen 2x2=4 
+iteraciones del cuerpo interno, osea el doble y eso genera mas tiempo de operacion.
+Si aun no se entiende, es On*2 porque dependio de dos veces para que se ejecute el bucle y eso genera mas operaciones.
+
+¿Que son restricciones?
+Son formas de restringir una operacion, supongamos tengo un servidor de 5gb de ram, el limite sera 5gb, si este se sobrecarga va a petar
+por eso es importante siempre definir limites y advertencias.
+
+¿Que es un set en python?
+No nos vayamos lejos, de forma cotidiana estan presentes se encuentran en minecraft, al comprar un set te viene armadura definida 
+En la programacion, un set son datos que se almacenan de forma unica, sin duplicaciones.
+Entonces, tenemos este ejemplo proporcionado por esa hoja (Vilela si lees esto me dejaste lo mas dificil para mi y a pintun no)
+datos = [5, 2, 5, 9, 2]
+unicos = set(datos)
+print(len(unicos))
+
+Es de esta forma como se establece un set de datos para eliminar cualquier tipo de repeticion y generar mas tiempo de proceso.
+Por ello, al usar len y ejecutarlo, este nos permitira conocer cuantos elementos distintos tiene este set.
